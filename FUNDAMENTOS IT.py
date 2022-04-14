@@ -1,11 +1,14 @@
 Username = input("Enter username:")
+from datetime import datetime
+now= datetime.now()
+print("current time=",now)
 import math
 math.pi
 3.141592653589793
 pi=math.pi
 
 print("Select option to peform")
-print("1.Area de círculo.\n2.Area de Cuadrado.\n3.Area de Rectángulo.\n4.Area de Rombo\n5.Area de Romboide.\n6.Area de Trapecio.\n7.Area de Polígono Regular.\n8.Salir,S/N.\n9.Hora y Fecha")
+print("1.Area de círculo.\n2.Area de Cuadrado.\n3.Area de Rectángulo.\n4.Area de Rombo\n5.Area de Romboide.\n6.Area de Trapecio.\n7.Area de Polígono Regular.\n8.Salir,S/N")
 x=int(input("Choose the figure"))
 
 if x==1:
@@ -14,7 +17,6 @@ radio=float(input())
 area= pi * radio**2
 print ("area de un circulo:")
 print (area)
-
 
 if x==2:
     print("ingresar el lado")
